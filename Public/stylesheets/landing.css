@@ -1,0 +1,330 @@
+/*landing page css*/
+
+.bg-extra-static{
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .bg-extra{
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .bg-fate{
+    background: rgba(34, 22, 22, 0.6);
+  }
+  .nav-border{
+    border-bottom: none;
+    border-top: none;
+  }
+  
+  .below-nav{
+    margin-top: 4em;
+  }
+  /*nav links */
+  .brand-nav{
+    color:bisque;
+    font-weight: 600;
+    font-size: 2.2rem;
+    text-shadow: rgb(197, 191, 183);
+     text-transform: uppercase;
+  }
+  .text-link{
+    font-weight: 200;
+    font-size: 0.9rem;
+    color:#f5d1b0;
+    text-transform: uppercase;
+  }
+  /*
+  width: 100%;
+      height: 93vh;
+      position: relative;
+    background: url('https://i.ibb.co/vXqDmnh/background.jpg') no-repeat center center/cover;
+    https://images.unsplash.com/photo-1573855619003-97b4799dcd8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80
+    */
+    .showcase {
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1518101645466-7795885ff8f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80') no-repeat center center/cover;
+   
+      
+    /*background-size:cover;*/
+   
+    /*background-position: 50% 50%;*/
+    background-attachment: fixed;
+   
+  
+  }
+  .showcase::after{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-shadow: inset 120px 100px 250px #1f1c1c, inset -120px -100px 250px #1f1c1c;
+  }
+  .border-btn{
+    border: 0em;
+    box-shadow: 0em 1px 0em rgba(0, 0, 0, 0.45);
+    background-color: #ebddc7;
+  }
+  
+  .text-content{
+    font-weight: 650;
+    font-size: 2.2rem;
+   
+     
+  
+    
+  
+  }
+  #landing-header {
+    
+    z-index: 1;
+    position: relative;
+    text-align:center;
+   
+    margin-top: auto;
+    padding-top: 40vh;
+    
+    
+  }
+  #btnScrollToTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background:grey;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+
+  }
+  #btnScrollToTop:active{
+    background:rgb(182, 181, 181);
+  }
+ 
+  /*querys*/
+  @media (max-width:500px){
+    .text-content{
+      font-weight: 550;
+      font-size: 1rem;
+      color: rgb(197, 191, 183);
+    }
+    
+  }
+  
+  /*typing effect*/
+  #landing-header h1{
+    overflow: hidden;
+    border-right: 2px solid;
+    margin: 0 auto;
+    white-space: nowrap;
+    user-select: none;
+  
+  animation: typing 3.6s steps(30,end),blink-caret 1s step-end infinite;   
+  
+  }
+  @keyframes typing{
+    from {
+        width: 0;
+        color: #e6e0da;
+    }
+    to{
+        width: 100%;
+      
+    }
+  }
+  @keyframes blink-caret {
+    50%{
+        border-color: transparent;
+    }
+  }
+  
+  
+  
+  /*.cat-text{
+    opacity: 0;
+    transform: translateY(20px);
+    transform: 0.5s all ease-in-out;
+  
+  }
+  .intro-appear{
+    opacity: 1;
+    transform: translateY(0px);
+  
+  }*/
+  
+  bg-border{
+    border: none;
+    color:white;
+  }
+  .content{
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    weight:200;
+    font-weight: 2rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+   
+  }
+  .lead{
+    text-align: left;
+    font-size: small;
+  }
+  .content-header{
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 1.9rem;
+    margin-top: 2rem;
+    text-align: start;
+    text-transform: uppercase;
+   
+  }
+  body {
+      font-family: 'Arial', sans-serif;
+      -webkit-font-smoothing: antialiased;
+  
+  }
+  
+  .below-body{
+    margin-top: 4em;
+  }
+  @media only screen and (max-width:767px){
+  .bg-img{
+  
+    background-image: url("https://images.unsplash.com/photo-1518101645466-7795885ff8f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    background-color: transparent;
+    background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  }
+  }
+  
+  .text-shadow{
+    text-shadow: 1px 1px 2px rgb(114, 111, 112);
+    
+  }
+    .nav-bg{
+        color: thistle;
+    }
+    .nav.fa{
+      font-size: 200%;
+      color: thistle;
+  }
+  
+  .header-color{
+        color:white;
+    }
+    
+    
+    
+    .jubotron #landing-header h1 {
+      color: rgba(175, 187, 181, 0.904);
+    }
+  /*nav bar*/
+  
+  
+  .toolbar {
+      z-index: 1;
+      position: relative;
+      padding-top: 2vh;
+    }
+    
+    .fa-arrow-right{
+        font-size: 100%;
+    }
+  
+    /*footer of clothing brand*/
+    footer{
+        position: fixed-bottom;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 50px;
+        display: flex;
+        align-items: right;
+        width: 100%;
+        color: #ababab;
+        z-index: 1;
+        opacity: 1;
+        margin-left: 50%;
+    }
+    body{
+      background-color:white;
+    }
+    .blurb h2 {
+    
+      font-weight: 100;
+      font-size: 2.5rem;
+   }
+   
+   .blurb p {
+       
+       font-weight: 100;
+       font-size: 1.125rem;
+       line-height: 2;
+   }
+   .content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .footer{
+    max-width: 70%;
+    margin: 1rem auto;
+    
+  }
+  .footer,
+  .footer a{
+    color: #999;
+    font-size: 0.9rem;
+  }
+  
+  .footer p{
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:2rem
+  }
+  .footer li{
+    line-height: 1.9;
+  }
+  .footer .lang-select{
+    margin-top: 2rem;
+    color: #999;
+    background-image: none;
+    border: 1px solid #333;
+    padding: 1rem 1.2rem;
+      border-radius: 5px;
+  }
+  .footer .footer-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  
+     /* Older browser support - .no-cssanimations class added by modernizr */
+     .no-cssanimations .slideshow li {
+      opacity: 1;
+  }
+  

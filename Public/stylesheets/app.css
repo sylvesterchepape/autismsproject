@@ -1,0 +1,192 @@
+body{
+    background-color: #F1F1F1;
+  }
+  
+  
+  .card-body{
+      background-color: white
+  }
+  .card button {
+     border: none;
+     outline: 0;
+     padding: 12px;
+     color: white;
+     background-color: #000;
+     text-align: center;
+     cursor: pointer;
+     width: 100%;
+     font-size: 18px;
+   }
+   .card button:hover {
+     opacity: 0.7;
+   }
+  
+    
+  .card{
+      border:none;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+ 
+  .below-nav{
+      margin-top: 5em;
+  }
+ 
+  .brand-nav{
+     color:bisque;
+     font-weight: 600;
+     font-size: 2.2rem;
+     text-shadow: rgb(197, 191, 183);
+      text-transform: uppercase;
+   }
+   .text-link{
+     font-weight: 200;
+     font-size: 1rem;
+     color:#f5d1b0;
+     text-transform: uppercase;
+   }
+   .text-link{
+     font-weight: 300;
+     font-size: 1rem;
+     color:#f5d1b0;
+     text-transform: uppercase;
+   }
+   .text-dec{
+     font-weight: 600;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 0.80rem;
+     text-transform: capitalize;
+     text-align-last: left;
+   }
+   .bg-nav{
+       background-color: darkgray;
+   }
+ 
+   /*texts*/
+   #head-text{
+       text-align: center;
+       text-transform: uppercase;
+       color: #FFFFFF;
+       margin-bottom: 4rem;
+ 
+   }
+   .image-crop{
+       height: 10.2rem;
+       width: 100%;
+ 
+   }
+ 
+   .align-form{
+     width: 50%;
+     margin: 25px auto;
+ 
+   }
+   
+   .row .form-group .toggle-password {
+     position: absolute;
+     width:40px;
+     height:40px;
+     top:335px;
+     right:10px;
+     border-radius:50%;
+     text-align:center;
+     line-height:35px;
+     font-size:20px;
+     cursor:pointer;
+   }
+   .row .form-group .toggle-password.active i.fa-eye {
+     display:none;
+   }
+   .row .form-group .toggle-password.active i.fa-eye-slash {
+     display:inline;
+   }
+   .row .form-group .toggle-password i.fa-eye-slash {
+     display:none;
+   }
+   .row .form-group .password-policies {
+     position:relative;
+     top:0px;
+     left:50%;
+     transform:translateX(-50%);
+     width:90%;
+     padding:0px;
+     height:0px;
+     background:#f5f5f5;
+     border-radius:5px;
+     margin-top:10px;
+     box-sizing:border-box;
+     opacity:0;
+     overflow:hidden;
+     transition: height 300ms ease-in-out,
+                 opacity 300ms ease-in-out;
+   }
+   .row .form-group .password-policies.active {
+     opacity:1;
+     padding:10px;
+     height:180px;
+     
+   }
+   .row .form-group .password-policies > div {
+     margin:15px 10px;
+     font-weight:550;
+     font-size:75%;
+     color:#888;
+     transition:all 300ms ease-in-out;
+   }
+   .row .form-group .password-policies > div.active {
+     color:#4BB543;
+   }
+ 
+   /*compatible in all devices*/
+   @media (max-width:768px){
+     .row .form-group .toggle-password {
+       position: absolute;
+       width:40px;
+       height:40px;
+       top:335px;
+       right:10px;
+       border-radius:50%;
+       text-align:center;
+       line-height:35px;
+       font-size:15px;
+       cursor:pointer;
+     }
+     .row .form-group .password-policies > div {
+       margin:15px 10px;
+       font-weight:450;
+       font-size:66%;
+       color:#888;
+       transition:all 300ms ease-in-out;
+     }
+   }
+ 
+  .fa-arrow-left{
+      font-size: 2rem;
+      font-weight: 400;
+      color: black;
+  }
+  /* Chrome, Safari, Edge, Opera */
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+ }
+ 
+ /* Firefox */
+ input[type=number] {
+   -moz-appearance: textfield;
+ }
+  
+  /* Older browser support - .no-cssanimations class added by modernizr */
+  .no-cssanimations .slideshow li {
+     opacity: 1;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
