@@ -1,7 +1,7 @@
 <%- include("./partials/header") %>
 
 <div class="container below-nav">
-    <h4>Recently added course</h4>  
+    <h4>WE STUDY TOGETHER , WE WIN TOGETHER</h4>  
 
     <hr class=" shadow mx-3">
     <div class="row text-center " style="display:flex;flex-wrap:wrap">
@@ -9,17 +9,18 @@
       <div class="col-md-3 col-sm-6 mx-4 mb-2">
         
           <div class="card" style="width: 18rem;">
-            <img src="<%=course.image%>" class="card-img-top">
+            <img src="<%= course.images[0].url%>" class="card-img-top">
+           
 
             <div class="card-body">
-              <h5 class="card-title"> <%=course.brand%></h5>
-              <h4><%=course.product%></h4>
-              <h3>R<%=course.price%> each</h3>
+              <h5 class="card-title"> <%=course.subject%></h5>
+              <h4><%=course.contentNo%></h4>
+          
               <p class="card-text"><%=course.decription%></p>
           </div>
-          <form action="/course/<%= product._id%>" method="GET">
+          <form action="/course/<%=course._id%>" method="GET">
           <p>
-            <button  class="stretched-link">add to cart</button>
+            <button  class="stretched-link">enroll</button>
           </p>
         </form>
       

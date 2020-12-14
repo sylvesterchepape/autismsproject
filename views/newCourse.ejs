@@ -1,33 +1,33 @@
 
 <%- include("./partials/header") %>
 <div class="container below-nav">
+<div>
+    <h1 style="text-align: center">ADD new courses</h1>
 
     <div class="row">
-        <h1 style="text-align: center">add new course</h1>
+        
         <div style="width: 30%; margin: 25px auto;">
-            <form action="/brands" method="POST">
+            <form action="/course" method="POST" enctype="multipart/form-data" novalidate class="validated-form">
                 <div class="form-group">
-                    <input class="form-control" type="text" name="name" placeholder="name">
+                    <input class="form-control" type="text" name="course[name]" placeholder="name">
                 </div>
                 <div class="form-group">
-                    <input class="form-control" type="text" name="brand" placeholder="subject">
+                    <input class="form-control" type="text" name="course[subject]" placeholder="subject">
                 </div>
                 <div class="form-group">
-                    <input class="form-control" type="text" name="size" placeholder="size" min="1" step="1" max="38">
+                    <input class="form-control-file" type="file" name="image" multiple>
                 </div>
                 <div class="form-group">
-                    <input class="form-control" type="text" name="image" placeholder="image url">
+                    <input class="form-control-file" type="file" name="video" multiple>
                 </div>
                 <div class="form-group">
 
                     <div class="form-group">
-                        <input class="form-control" type="number" name="price" placeholder="product price">
+                        <input class="form-control" type="number" name="course[contentNo]" placeholder="Content Number">
                     </div>
-                    <input class="form-control" type="text" name="description" placeholder="description">
+                    <input class="form-control" type="text" name="course[description]" placeholder="Course description">
                 </div>
-                <div class="form-group">
-                    <input class="form-control" type="number" name="qty" placeholder="number of this product">
-                </div>
+            
                 <div class="form-group">
                     <button class="btn btn-lg btn-primary btn-block">Submit!</button>
                 </div>
@@ -36,7 +36,7 @@
         </div>
     </div>
 </div>
-
+</div>
 
 
 <%- include("./partials/footer") %>

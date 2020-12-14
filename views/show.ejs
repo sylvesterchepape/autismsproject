@@ -6,29 +6,28 @@
 <h2>detail</h2>
 
     </div>
-    <div class="col-sm-4">
 
-<div class="thumbnail">
-    <img class="img-responsive" src="<%= course.image %>">
+     <div class="col-sm-6">  
+
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="<%= course.videos[0].url%>" allowfullscreen></iframe>
+      </div>
     <div class="caption-full">
         <h4 class="pull-right">
-            R12/each
+            <a>	<%=course.subject%></a>
         </h4>
-        <h4>
-
-            <a>	<%=course.name%></a>
-         </h4>
+        
         <p>
-<%=course.description%>
+           <%= course.description%>
 </p>
 
-        <a class="btn btn-xs btn-warning" href="/brands/<%=products._id%>/edit">edit</a>
-        <form class="delete-form" action="/brands/<%=products._id%>?_method=DELETE" method=POST>
+        <a class="btn btn-xs btn-warning" href="/course/<%=course._id%>/edit">edit</a>
+        <form class="delete-form" action="/course/<%=course._id%>?_method=DELETE" method=POST>
             <button  class="btn btn-xs btn-danger">
                 delete
             </button>
         </form>
-    
+    </div> 
     </div>
 </div>
 

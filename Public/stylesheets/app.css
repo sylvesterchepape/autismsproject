@@ -1,7 +1,24 @@
 body{
     background-color: #F1F1F1;
   }
-  
+  .bg-extra-static {
+    background:rgb(70, 64, 64);
+    
+    
+  }
+  .bg-extra{
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .nav-border{
+    border-bottom: none;
+    border-top: none;
+  }
+  .text-link{
+    font-weight: 200;
+    font-size: 0.9rem;
+    color:#f5d1b0;
+    text-transform: uppercase;
+  }
   
   .card-body{
       background-color: white
@@ -163,6 +180,11 @@ body{
       font-size: 2rem;
       font-weight: 400;
       color: black;
+  }
+  
+  .footer li a{
+    color: #999;
+    font-size: 0.9rem;
   }
   /* Chrome, Safari, Edge, Opera */
  input::-webkit-outer-spin-button,
