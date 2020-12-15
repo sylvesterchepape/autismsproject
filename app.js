@@ -112,11 +112,10 @@ app.post("/course",isLoggedIn , upload.array('image'), catchAsync(async(req, res
     var description=req.body.decription;*/
     const course = new Course(req.body.course);
     course.images = req.files.map(f => ({ url: f.path, filename: f.filename }));
-    
-    console.log(course);
+
     await course.save();
     
-
+  
   
     req.flash('success', "thank you " + ",you've successfully created new course content");
  
@@ -129,7 +128,7 @@ app.post("/course",isLoggedIn , upload.array('image'), catchAsync(async(req, res
 app.get("/course/:id([0-9a-f]{24})",catchAsync(async(req,res)=>{
   const id = req.params.id;
     //find the course id
-   const foundcourse=await Course.findById(id);
+   const foundcourse=await Course.findById(req.params.id);
 
    if(!foundcourse){
        req.flash("error","cannot find this course ,try again later")
