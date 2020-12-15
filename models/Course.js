@@ -10,12 +10,7 @@ var CourseSchema = new mongoose.Schema({
         filename:String
     }
 ],
-    videos :[
-        {
-        url:String,
-        filename:String
-    }
-],
+    video :String,
     contentNo:Number,
     description: String
     

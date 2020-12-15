@@ -101,7 +101,7 @@ app.get("/course/new",isLoggedIn,function(req,res){
  }
  );
 //create new courses
-app.post("/course",isLoggedIn , upload.array('image'),upload.array('video'), catchAsync(async(req, res)=>{
+app.post("/course",isLoggedIn , upload.array('image'), catchAsync(async(req, res)=>{
  
     // get data from form and add to campgrounds array
    /* var name=req.body.name
@@ -112,7 +112,7 @@ app.post("/course",isLoggedIn , upload.array('image'),upload.array('video'), cat
     var description=req.body.decription;*/
     const course = new Course(req.body.course);
     course.images = req.files.map(f => ({ url: f.path, filename: f.filename }));
-    course.videos = req.files.map(f => ({ url: f.path, filename: f.filename }));
+    
     console.log(course);
     await course.save();
     

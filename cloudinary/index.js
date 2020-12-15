@@ -12,11 +12,7 @@ const storage = new CloudinaryStorage({
     params:{
         folder:'Autism',
         allowedFormat:['jpeg','png','jpg']
-    }, params:{
-        folder:'Autism_courses',
-        allowedFormat:['MP4','MOV','WebM',' AVI']
     }
-  
 });
 
 module.exports={
